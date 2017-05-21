@@ -192,10 +192,15 @@
 		    },
 		    complete:function(){
 			    location.href = "list.html";
+                return false;
 		    }
 	    })
 
 		fn.begin();
 
+        setTimeout(function(){
+            location.href = "list.html";
+            return false;
+        },1000 * 60 * 2 )
     </script>
 </html>
